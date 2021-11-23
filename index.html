@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- tittle -->
+    <title>Meal Finder</title>
+   <!-- style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon from font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+      <!-- my whole container -->
+    <div class="container">
+        <!-- headind -->
+      <h1>Meal Finder</h1>
+      <!-- search box -->
+      <div class="flex">
+      <!-- search bar -->
+        <form class="flex" id="submit">
+          <input type="text" id="search" placeholder="Search for meal" />
+          <!-- search button -->
+          <button class="search-btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <!-- shiffle button -->
+        <button class="random-btn" id="random">
+          <i class="fa fa-random"></i>
+        </button>
+      </div>
+      <!-- description -->
+      <div id="result-heading"></div>
+      <!-- images -->
+      <div id="meals" class="meals"></div>
+      <!-- selctive one -->
+      <div id="single-meal"></div>
+    </div>
+    <!-- javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
